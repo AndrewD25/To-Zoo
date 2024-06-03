@@ -1,3 +1,26 @@
 body {
-    background-color: #f1bb07;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10px;
+}
+
+#petArea {
+    width: 100%;
+    min-height: 10px;
+    border: 1px solid black;
+}
+
+#petArea .pet {
+    width: 100%; /*Change later*/
+}
+
+#toDoList {
+    width: 100%;
+    min-height: 10px;
+    border: 1px dashed black;
 }
