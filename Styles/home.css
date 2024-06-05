@@ -9,29 +9,43 @@ header {
     min-height: 10px;
 }
 
+header h1 {
+    font-family: "Poetsen One", sans-serif;
+    color: #92ddaa;
+    text-shadow: 2px 2px 2px #0008;
+}
+
 #petArea {
     position: relative;
     width: 100%;
-    min-height: 10px;
-    height: 100vw; /*Change later*/
+    height: clamp(10px, 100vw, 60vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#petArea .pet {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#petArea .petContainer {
     width: 70%;
+    text-align: center;
 }
 
-#petArea .shadow {
+.petContainer .pet {
+    width: 100%;
+    max-width: 42vh; /*Will probably need to refine later*/
+}
+
+.alignShadow {
+    position: relative;
+}
+
+.shadow {
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    z-index: -1;
+    bottom: -1%;
+    left: 0;
+    width: 100%;
     opacity: 0.75;
+    z-index: -1; 
+    scale: 1.2;
 }
 
 #petArea .icon { 
@@ -88,7 +102,23 @@ header {
     background-color: #92ddaa;
     width: 100%;
     min-height: 30px; 
-    -webkit-box-shadow: 1px 7px 18px 0px rgba(0,0,0,0.54);
-    -moz-box-shadow: 1px 7px 18px 0px rgba(0,0,0,0.54);
-    box-shadow: 1px 7px 18px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 1px 7px 18px 0px #0008;
+    -moz-box-shadow: 1px 7px 18px 0px #0008;
+    box-shadow: 1px 7px 18px 0px #0008;
+}
+
+/* -------------/
+* TABLET STYLES *
+/------------- */
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* -------------/
+*   PC STYLES   *
+/------------- */
+
+@media only screen and (min-width: 992px) {
+
 }
