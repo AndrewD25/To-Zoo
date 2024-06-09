@@ -83,6 +83,21 @@ header h1 {
     margin-block: 0;
 }
 
+.arrow {
+    position: absolute;
+    border-radius: 8px;
+    background-color: #dadada69;
+    padding: 1rem;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
 #toDoListContainer {
     width: 100%;
     min-height: 10px;
